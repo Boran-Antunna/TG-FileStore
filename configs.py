@@ -3,22 +3,22 @@
 import os
 
 class Config(object):
-	API_ID = int(os.environ.get("API_ID", "0"))
-	API_HASH = os.environ.get("API_HASH")
-	BOT_TOKEN = os.environ.get("BOT_TOKEN")
-	BOT_USERNAME = os.environ.get("BOT_USERNAME")
-	DB_CHANNEL = int(os.environ.get("DB_CHANNEL", "-100"))
+	API_ID = int(os.environ.get("API_ID", "25976580"))
+	API_HASH = os.environ.get("API_HASH", "b5562ab77a96e49bc9dd78cc103c6333")
+	BOT_TOKEN = os.environ.get("BOT_TOKEN", "6526976127:AAGu93YqffCmkQJF0AufgFHGiBGjOqGkyjk")
+	BOT_USERNAME = os.environ.get("BOT_USERNAME", "Kasukabe_files_bot")
+	DB_CHANNEL = int(os.environ.get("DB_CHANNEL", "-1002188401024"))
 	SHORTLINK_URL = os.environ.get('SHORTLINK_URL')
 	SHORTLINK_API = os.environ.get('SHORTLINK_API')
-	BOT_OWNER = int(os.environ.get("BOT_OWNER", "1445283714"))
-	DATABASE_URL = os.environ.get("DATABASE_URL")
-	UPDATES_CHANNEL = os.environ.get("UPDATES_CHANNEL", "")
-	LOG_CHANNEL = os.environ.get("LOG_CHANNEL", None)
-	BANNED_USERS = set(int(x) for x in os.environ.get("BANNED_USERS", "1234567890").split())
+	BOT_OWNER = int(os.environ.get("BOT_OWNER", "6708929009"))
+	DATABASE_URL = os.environ.get("DATABASE_URL", "mongodb+srv://developervro:developerrapuka@cluster9.gcj9754.mongodb.net/?retryWrites=true&w=majority&appName=Cluster9")
+	UPDATES_CHANNEL = os.environ.get("UPDATES_CHANNEL", "-1002088637887")
+	LOG_CHANNEL = os.environ.get("LOG_CHANNEL", "-1002213410383")
+	BANNED_USERS = set(int(x) for x in os.environ.get("BANNED_USERS", "").split())
 	FORWARD_AS_COPY = bool(os.environ.get("FORWARD_AS_COPY", True))
 	BROADCAST_AS_COPY = bool(os.environ.get("BROADCAST_AS_COPY", False))
-	BANNED_CHAT_IDS = list(set(int(x) for x in os.environ.get("BANNED_CHAT_IDS", "-1001362659779 -1001255795497").split()))
-	OTHER_USERS_CAN_SAVE_FILE = [int(id) for id in os.environ.get("OTHER_USERS_CAN_SAVE_FILE", "").split(",") if id.strip()]
+	BANNED_CHAT_IDS = list(set(int(x) for x in os.environ.get("BANNED_CHAT_IDS", "").split()))
+	OTHER_USERS_CAN_SAVE_FILE = [int(id) for id in os.environ.get("OTHER_USERS_CAN_SAVE_FILE", "true").split(",") if id.strip()]
 	ABOUT_BOT_TEXT = f"""
 This is a Permanent FileStore Bot. 
 Send Me any Media or File. I can Work In Channel too. Add Me to Channel with Edit Permission, I will add save Uploaded File in Channel and Share a Shareable Link. 
@@ -31,22 +31,22 @@ Send Me any Media or File. I can Work In Channel too. Add Me to Channel with Edi
 │
 ├🔹 **Library:** [Pyrogram](https://docs.pyrogram.org)
 │
-├🔹 **Hosted On:** [Heroku](https://heroku.com)
+├🔹 **Hosted On:** VPS PRIVATE SERVER
 │
-├🔸 **Developer:** [Predator HackerzZ](https://t.me/OwnYourBotz) 
+├🔸 **Developer:** TOJI
 │
-├🔹 **Bot Support:** [Support Group](https://t.me/TeleRoid14)
+├🔹 **Bot Support:** [Support Group](https://t.me/Kasukabe_team)
 │
-├🔸 **Bot Updates:** [Bots Channel](https://t.me/TeleRoidGroup)
+├🔸 **Bot Updates:** [Bots Channel](https://t.me/moviez_cartoonz)
 │
 ╰──────[ 😎 ]───────────⍟
 """
 	ABOUT_DEV_TEXT = f"""
-🧑🏻‍💻 **𝗗𝗲𝘃𝗲𝗹𝗼𝗽𝗲𝗿:** [@PredatorHackerzZ](https://github.com/PredatorHackerzZ)
+🧑🏻‍💻 **𝗗𝗲𝘃𝗲𝗹𝗼𝗽𝗲𝗿:** [TOJI](https://t.me/Kasukabe_team)
  
  I am Super noob Please Support My Hard Work.
 
-[Donate Me](https://t.me/DonateXrobot) or ```teleroidgroup@axl```
+Not Updated or ```@Kasukabe_team```
 """
 	HOME_TEXT = """
 Hello, [{}](tg://user?id={})\n\nThis is a Permanent **FileStore Bot**.
